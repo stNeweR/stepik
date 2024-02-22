@@ -14,7 +14,6 @@
   </Container>
 </template>
 
-
 <script setup>
 import axios from 'axios';
 import Container from "@/components/Container.vue";
@@ -28,7 +27,9 @@ const login = async () => {
   try {
     await axios.post("http://localhost:1234/api/login", {email: email.value, password: password.value})
       .then(response => {
-        console.log(response)
+        let token = Object.values(response.data)["0"]["token"]
+        console.log(token)
+        document.cookie = `token=${token}; expires=${new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toUTCString()}; path=/; SameSite=None; Secure`;
       })
   } catch (error) {
     console.error(error)

@@ -5,7 +5,6 @@ import { createWebHistory } from 'vue-router'
 import { createRouter } from 'vue-router'
 import routes from "./Routes"
 
-
 const app = createApp(App)
 const router = createRouter({
     history: createWebHistory(),

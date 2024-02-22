@@ -1,8 +1,8 @@
-import Home from "./pages/Home.vue"
-import About from "./pages/About.vue"
-import Catalog from "./pages/Catalog.vue"
-import Login from "./pages/Login.vue"
-import Get from "@/pages/Get.vue";
+import Home from "@/pages/Home.vue"
+import About from "@/pages/About.vue"
+import Catalog from "@/pages/Catalog.vue"
+import Login from "@/pages/Login.vue"
+import Page from "@/pages/Page.vue";
 
 const routes = [
     { 
@@ -22,9 +22,9 @@ const routes = [
         name: "login",
         component: Login
      }, {
-        path: "/get",
-        name: "get",
-        component: Get,
+        path: "/page",
+        name: "page",
+        component: Page,
     }
 ]
 
