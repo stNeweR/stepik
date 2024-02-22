@@ -1,3 +1,9 @@
+<template>
+  <Container>
+    <h1>Error!</h1>
+  </Container>
+</template>
+
 <script setup>
 import Container from "@/components/Container.vue";
 import {onMounted} from "vue";
@@ -16,14 +22,5 @@ onMounted(async () => {
   })
 
 })
-
-
-
 </script>
-
-<template>
-  <Container>
-    <h1>Error!</h1>
-  </Container>
-</template>
 

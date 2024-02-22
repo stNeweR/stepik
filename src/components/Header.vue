@@ -10,10 +10,10 @@
             </div>
             <div class="flex gap-x-4">
                 <form action="" class="w-11/12">
-                    <input type="text" class="w-full bg-transparent border-b-2 border-b-slate-900 outline-none focus:translate-y-1 transition">
+                  <input class="border border-gray-400 bg-transparent focus:outline-none focus:border-purple-800 transition rounded-md py-1 px-2 text-white">
                 </form>
                 <router-link :to="{ name: 'login' }">Login</router-link>
-                <a href="">Register</a>
+                <router-link :to="{ name: 'register'}">Register</router-link>
             </div>
         </div>
     </header>
@@ -22,4 +22,5 @@
 
 <script setup>
 import Logo from './Logo.vue';
+import FormInput from "@/components/FormInput.vue";
 </script>
